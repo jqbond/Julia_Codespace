@@ -1,2 +1,3 @@
 # Julia_Codespace
-Using GH Codespaces to create a virtual machine that runs Python or Julia; can run Jupyter Lab from terminal.
+
+This repository contains a .devcontainer directory that include a devcontainer.json configuration file and a dockerfile. It can be run directly from Github as a Codespace, and it will create a cloud-based virtual environment that will have an installation of Anaconda and Julia. It borrows the Jupyter Docker Stacks to install Anaconda, and then it uses an edited version of the Jupyter Datascience Notebook dockerfile to install Julia, and add a few packages.  It includes modified configuration files for Jupyter Server/Lab/Notebook that avoid CORS error when opening Jupyter using a browser.
